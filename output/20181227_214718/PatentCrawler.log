@@ -1,0 +1,116 @@
+2018-12-27 21:47:22 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: crawler)
+2018-12-27 21:47:22 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.7 |Anaconda custom (64-bit)| (default, Oct 28 2018, 19:44:12) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2018-12-27 21:47:22 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawler', 'COOKIES_DEBUG': True, 'DOWNLOAD_DELAY': 1.0, 'DOWNLOAD_TIMEOUT': 10, 'LOG_FILE': 'E:\\csy\\论文使用数据\\爬虫\\PatentCrawler\\output\\20181227_214718\\PatentCrawler.log', 'NEWSPIDER_MODULE': 'crawler.spiders', 'RETRY_TIMES': 3, 'SPIDER_MODULES': ['crawler.spiders']}
+2018-12-27 21:47:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-12-27 21:47:24 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawler.middlewares.PatentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-12-27 21:47:24 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-12-27 21:47:24 [scrapy.middleware] INFO: Enabled item pipelines:
+['crawler.pipelines.CrawlerPipeline']
+2018-12-27 21:47:24 [scrapy.core.engine] INFO: Spider opened
+2018-12-27 21:47:24 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-12-27 21:47:24 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-12-27 21:47:44 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml> (failed 1 times): User timeout caused connection failure: Getting http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml took longer than 10.0 seconds..
+2018-12-27 21:47:45 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:47:55 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:47:55 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:47:55 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:05 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:06 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:48:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:16 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:16 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:48:16 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:26 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 503 None
+2018-12-27 21:48:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:36 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:48:36 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:46 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-12-27 21:48:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:46 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:48:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:56 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:48:56 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:48:56 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:06 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:49:06 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:16 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:26 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:49:26 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:36 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:36 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:49:36 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:46 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:47 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:49:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:49:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:07 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:17 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:17 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:50:17 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:27 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:27 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:50:27 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:37 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:37 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:50:37 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:38 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "GET http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/tableSearch-showTableSearchIndex.shtml HTTP/1.1" 503 None
+2018-12-27 21:50:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:47 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:50:47 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:50:57 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:51:00 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:51:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:51:10 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:51:20 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:51:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:51:30 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:51:30 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:51:40 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:51:50 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:51:50 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:51:50 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:00 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:01 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:52:01 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:11 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:21 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:52:21 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:31 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:41 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:41 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:52:41 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:51 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:52:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:52:51 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "GET http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/tableSearch-showTableSearchIndex.shtml HTTP/1.1" 503 None
+2018-12-27 21:52:51 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:53:01 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:53:01 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:53:11 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:53:21 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:53:21 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:53:22 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139

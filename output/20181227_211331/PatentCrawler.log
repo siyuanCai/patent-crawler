@@ -1,0 +1,59 @@
+2018-12-27 21:13:31 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: crawler)
+2018-12-27 21:13:31 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.19.0, Twisted 18.9.0, Python 3.6.7 |Anaconda custom (64-bit)| (default, Oct 28 2018, 19:44:12) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2018-12-27 21:13:31 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawler', 'COOKIES_DEBUG': True, 'DOWNLOAD_DELAY': 1.0, 'DOWNLOAD_TIMEOUT': 10, 'LOG_FILE': 'E:\\csy\\论文使用数据\\爬虫\\PatentCrawler\\output\\20181227_211331\\PatentCrawler.log', 'NEWSPIDER_MODULE': 'crawler.spiders', 'RETRY_TIMES': 3, 'SPIDER_MODULES': ['crawler.spiders']}
+2018-12-27 21:13:32 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-12-27 21:13:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawler.middlewares.PatentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-12-27 21:13:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-12-27 21:13:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['crawler.pipelines.CrawlerPipeline']
+2018-12-27 21:13:34 [scrapy.core.engine] INFO: Spider opened
+2018-12-27 21:13:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-12-27 21:13:34 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-12-27 21:13:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml> (failed 1 times): User timeout caused connection failure: Getting http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/executeTableSearch0402-executeCommandSearch.shtml took longer than 10.0 seconds..
+2018-12-27 21:13:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:14:08 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:14:18 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:14:28 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:14:28 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:14:28 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:14:38 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-12-27 21:14:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:14:38 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 503 None
+2018-12-27 21:14:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:14:48 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:14:58 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-12-27 21:14:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:15:08 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:15:18 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:15:28 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:15:28 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:15:28 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:15:38 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:15:48 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:15:58 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:15:59 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:15:59 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:16:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:16:09 [urllib3.connectionpool] DEBUG: http://127.0.0.1:55139 "POST http://www.pss-system.gov.cn/sipopublicsearch/patentsearch/pageIsUesd-pageUsed.shtml HTTP/1.1" 200 None
+2018-12-27 21:16:09 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
+2018-12-27 21:16:19 [urllib3.connectionpool] DEBUG: Starting new HTTP connection (1): 127.0.0.1:55139
