@@ -43,17 +43,7 @@ def init_data_base():
 
 
 if __name__ == '__main__':
-    click.echo(
-        '''
-***************************************************************************
-* 使用说明：https://github.com/will4906/PatentCrawler/wiki
-* 代码更新：https://github.com/will4906/PatentCrawler
-* bug反馈、交流建议:
-* \t邮箱：553105821@qq.com
-* \tgithub：https://github.com/will4906/PatentCrawler/issues
-***************************************************************************
-        '''
-    )
+    click.echo()
     init_log()
     init_base_path()
     init_config()

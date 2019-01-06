@@ -1,11 +1,15 @@
 # -*- coding: utf-8 -*-
 """
+Created on Sun Jan  6 22:28:34 2019
+
+@author: Lenovo
+"""
+
+# -*- coding: utf-8 -*-
+"""
 Created on 2017/3/19
-
 @author: will4906
-
 url模块
-
 使用者请勿修改此处内容，
 开发者可根据实际需要自行定制开发
 """
@@ -135,15 +139,15 @@ url_login = {
     'headers': {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
         'Accept-Encoding': 'gzip, deflate',
-        'Accept-Language': 'zh-CN,zh;q=0.9',
+        'Accept-Language': 'zh-CN,zh;q=0.9,ja;q=0.8',
         'Cache-Control': 'max-age=0',
-        'Proxy-Connection': 'keep-alive',
+        'Connection': 'keep-alive',
         'Content-Type': 'application/x-www-form-urlencoded',
         'Host': 'www.pss-system.gov.cn',
         'Origin': 'http://www.pss-system.gov.cn',
         'Referer': 'http://www.pss-system.gov.cn/sipopublicsearch/portal/uilogin-forwardLogin.shtml',
         'Upgrade-Insecure-Requests': '1',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
     },
     'form_data': {
         "j_loginsuccess_url": "",
@@ -158,12 +162,12 @@ if __name__ == '__main__':
     coo = resp.cookies
     print(coo)
     coo.__delitem__('JSESSIONID')
-    coo.set('JSESSIONID', 'U94UbhRXHhrx6lW8HLNtDqKtSGyfJkwGY9VnzIuRdgZbSdnBnx_R!892378277!-1682455629	',
+    coo.set('JSESSIONID', 're4jRnjYiKtYan6jKouHMNsotOiH29-bcsukeqmmHD0YXmYaSEhN!616663700!1225767379',
             domain='www.pss-system.gov.cn')
     coo.__delitem__('IS_LOGIN')
     coo.set('IS_LOGIN', 'true', domain='www.pss-system.gov.cn/sipopublicsearch/patentsearch')
     coo.__delitem__("WEE_SID")
-    coo.set("WEE_SID", 'U94UbhRXHhrx6lW8HLNtDqKtSGyfJkwGY9VnzIuRdgZbSdnBnx_R',
+    coo.set("WEE_SID", 're4jRnjYiKtYan6jKouHMNsotOiH29-bcsukeqmmHD0YXmYaSEhN!616663700!1225767379!1546780047576',
             domain='www.pss-system.gov.cn/sipopublicsearch/patentsearch')
     print(coo)
     form_data = url_detail.get('form_data')

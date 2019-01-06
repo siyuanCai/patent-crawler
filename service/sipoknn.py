@@ -38,7 +38,7 @@ def convert_to_pure_black_white(image):
 
 
 def split_letters(image):
-    letters = [image[:, : 15], image[:, 15: 30], image[:, 30: 45], image[:, 45: 60]]
+    letters = [image[3:18, 4:13].reshape(15*9), image[3:18, 13:22].reshape(15*9), image[3:18, 32:41].reshape(15*9), image[3:18, 44:53].reshape(15*9)]
     return letters
 
 
@@ -77,10 +77,8 @@ def get_captcha_result(model_path, filename):
     :return: 解析结果
     """
     image = np.asarray(Image.open(filename).convert('L'))
-    image = (image > 135) * 255
-    letters = [image[:, 6:18].reshape(20 * 12), image[:, 19:31].reshape(20 * 12), image[:, 33:45].reshape(20 * 12),
-               image[:, 45:57].reshape(20 * 12)]
-    print(letters)
+    image = (image > 125) * 255
+    letters = [image[3:18, 4:13].reshape(15*9), image[3:18, 13:22].reshape(15*9), image[3:18, 32:41].reshape(15*9), image[3:18, 44:53].reshape(15*9)]
     model = joblib.load(model_path)
     result = ''
     for c in model.predict(letters):
